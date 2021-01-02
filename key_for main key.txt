@@ -1,0 +1,6 @@
+ config {
+            keyAlias 'key0'
+            keyPassword 'Mhtst36763131084'
+            storeFile file('D:/Program Files/mainkey.jks')
+            storePassword '8154167238'
+        }
