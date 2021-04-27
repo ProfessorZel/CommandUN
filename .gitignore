@@ -7,3 +7,5 @@
 /build
 /captures
 .externalNativeBuild
+/key_for main key.txt
+/app/release/
