@@ -9,3 +9,7 @@
 .externalNativeBuild
 /key_for main key.txt
 /app/release/
+/mainkey.jks
+/private_key.pepk
+/new/
+/app/build/

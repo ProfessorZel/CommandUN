@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Приказ Про:Инструктор</string>
+
+    <string name="komand1">Команд.</string>
+    <string name="komisar">Комиссар</string>
+    <string name="sport">Спорторг</string>
+    <string name="first">Ком. 1</string>
+    <string name="second">Ком. 2</string>
+    <string name="third">Ком. 3</string>
+    <string name="forth">Ком. 4</string>
+    <string name="all">всех</string>
+    <string name="postman">Посыльный</string>
+    <string-array name="age">
+        <item name="0">Age</item>
+        <item name="0">6</item>
+        <item name="0">7</item>
+        <item name="0">8</item>
+        <item name="0">9</item>
+        <item name="0">10</item>
+        <item name="0">11</item>
+        <item name="0">12</item>
+        <item name="0">13</item>
+        <item name="0">14</item>
+        <item name="0">15</item>
+        <item name="0">16</item>
+        <item name="0">17</item>
+        <item name="0">18</item>
+    </string-array>
+
+    <string name="yourname">Имя и Фамилия</string>
+    <string name="yoursirname">Номер телефона</string>
+    <string name="butto">Регистрация</string>
+
+    <string name="inputmessege">Cообщение.</string>
+    <string name="send">Отправить!</string>
+    <string name="enter">Войти</string>
+    <string name="sgw">Упс…</string>
+    <string name="inputpass">Введите пароль:</string>
+    <string name="tactic">Тактик</string>
+    <string name="update">Обновить</string>
+    <string name="empty">Необходимо ввести пароль!</string>
+    <string name="getlist">Получить список.</string>
+    <string name="emtytimetable">Нажмитие обновить для получения расписания.</string>
+    <string name="otdelenie">Отделение:</string>
+    <string name="go">ВЫЗВАТЬ</string>
+    <string name="add">Добавить курсанта</string>
+    <string name="addmark">Проставить оценки</string>
+    <string name="addcomment">Добавить коментарий</string>
+    <string name="sendlist">Отправить список</string>
+    <string name="id_lagerya">ID лагеря</string>
+    <string name="exit_from_account">Выход из учетной записи</string>
+    <string name="agestr">Возраст:</string>
+    <string name="button">Изменить</string>
+    <string-array name="ps">
+        <item name="0">Общий список</item>
+        <item name="0">Отделение 1</item>
+        <item name="0">Отделение 2</item>
+        <item name="0">Отделение 3</item>
+        <item name="0">Отделение 4</item>
+        <item name="0">Командный состав</item>
+    </string-array>
+</resources>

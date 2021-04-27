@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.astakhovmd.commander.UN">
+
+    <TabHost
+        android:id="@+id/host"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="ru.astakhovmd.commander.UN">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <Spinner
+                        android:id="@+id/spinlist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:entries="@array/ps"
+                        android:minWidth="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toTopOf="@+id/spinlist"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ListView
+                            android:id="@+id/list"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="1.0" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="vertical"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
+
+                    <Button
+                        android:id="@+id/CallComissar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/komisar"
+                        app:layout_constraintLeft_toRightOf="@+id/CallComand"
+                        app:layout_constraintRight_toLeftOf="@+id/CallSport"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/CallComand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/komand1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/CallComissar"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/CallSport"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/sport"
+                        app:layout_constraintLeft_toRightOf="@+id/CallComissar"
+                        app:layout_constraintRight_toLeftOf="@+id/CallTactic"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/CallFirst"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/first"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/CallSecond"
+                        app:layout_constraintTop_toTopOf="@+id/CallThird" />
+
+                    <Button
+                        android:id="@+id/CallSecond"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/second"
+                        app:layout_constraintLeft_toRightOf="@+id/CallFirst"
+                        app:layout_constraintRight_toLeftOf="@+id/CallThird"
+                        app:layout_constraintTop_toTopOf="@+id/CallThird" />
+
+                    <Button
+                        android:id="@+id/CallThird"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/third"
+                        app:layout_constraintLeft_toRightOf="@+id/CallSecond"
+                        app:layout_constraintRight_toLeftOf="@+id/CallForth"
+                        app:layout_constraintTop_toBottomOf="@+id/CallSport" />
+
+                    <Button
+                        android:id="@+id/CallForth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/forth"
+                        app:layout_constraintLeft_toRightOf="@+id/CallThird"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/CallThird" />
+
+                    <Button
+                        android:id="@+id/Callall"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/all"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/CallMail"
+                        app:layout_constraintTop_toBottomOf="@+id/CallFirst" />
+
+                    <Button
+                        android:id="@+id/CallMail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/postman"
+                        app:layout_constraintLeft_toRightOf="@+id/Callall"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/CallThird" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:onClick="hide_tool_bar"
+                        android:progress="100"
+                        android:scrollbarSize="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/CallMail" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="250dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/Senamsg"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/Senamsg" />
+
+                    <Button
+                        android:id="@+id/Senamsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="30dp"
+                        android:onClick="Send"
+                        android:text="@string/send"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ScrollView
+                        android:id="@+id/scrollView2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:scrollbars="vertical"
+                        android:textAlignment="gravity"
+                        app:layout_constraintBottom_toTopOf="@+id/editText2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/progressBar">
+
+                        <TextView
+                            android:id="@+id/textviewun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:text="@string/inputmessege"
+                            android:textSize="15sp" />
+                    </ScrollView>
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/inputmessege"
+                        android:inputType="textShortMessage"
+                        android:maxLength="800"
+                        android:onClick="updateorsend"
+                        app:layout_constraintBottom_toTopOf="@+id/Senamsg"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <Button
+                        android:id="@+id/CallTactic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="Call"
+                        android:text="@string/tactic"
+                        app:layout_constraintLeft_toRightOf="@+id/CallSport"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/f51"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:onClick="F5"
+                        android:text="@string/update"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/button" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="editTimetable"
+                        android:text="@string/button"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/f51"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="TextView"
+                        android:textColor="@color/colorAccent"
+                        app:layout_constraintBottom_toTopOf="@+id/f51"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:hint="Расписание скоро появиться!"
+                            android:text="@string/emtytimetable"
+                            android:textSize="16sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </ScrollView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </TabHost>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
